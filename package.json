@@ -1,0 +1,14 @@
+{
+  "name": "icon-proxy",
+  "type": "module",
+  "version": "1.0.0",
+  "license": "AGPL-3",
+  "author": "kobe-koto",
+  "homepage": "https://github.com/kobe-koto/Icon-Proxy",
+  "scripts": {
+    "dev": "wrangler pages dev ./"
+  },
+  "dependencies": {
+    "js-sha256": "^0.10.1"
+  }
+}
