@@ -1,9 +1,7 @@
 
 <h1 style="text-align: center">Icon-Proxy</h1>
 
-<p style="text-align: center">Proxy Telegram, Github, Gavatar or even more user icon all-in-one!</p>
-
-<p style="text-align: center">Using Cloudflare Pages Function.</p>
+<p style="text-align: center">Icon-Proxy provides a simple way to fetch a specified user’s icon from various platforms through Cloudflare Pages Functions.</p>
 
 # Usage 
 
