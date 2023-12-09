@@ -1,12 +1,9 @@
 export async function onRequest(context) {
-    const { request } = context;
-    const url = new URL(request.url);
-
-    const username = url.pathname.split("/").toReversed()[0];
+    const { username } = context.params;
     
     let Data = await fetch(`https://api.github.com/users/${username}`, {
         headers: {
-            "User-Agent": "curl/8.2.1"
+            "User-Agent": "curl/8.4.0"
         }
     });
     if (Data.status === 304 || Data.status === 200) {
@@ -16,7 +13,7 @@ export async function onRequest(context) {
             status: 404
         })
     } else {
-        return new Response("What the fuck", {
+        return new Response("500 Internal Error, What the fxxk.", {
             status: 500
         })
     }
