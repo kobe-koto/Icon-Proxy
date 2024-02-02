@@ -7,11 +7,11 @@
 
 1. GitHub
 
-   Request `https://example.org/github/[username]` !
+   Request `https://example.org/icon/github/[username]` !
 
 2. Gavatar
 
-   Request `https://example.org/gavatar/[email]` ! 
+   Request `https://example.org/icon/gavatar/[email]` ! 
 
    > **NOTE**
    >
@@ -19,11 +19,11 @@
    >
    > The Size query string is supported (1~2048 pixels), example below:
    >
-   > `https://example.org/gavatar/[email]?s=512`
+   > `https://example.org/icon/gavatar/[email]?s=512`
    
 3. Telegram
 
-   Request `https://example.org/telegram/[username]` !
+   Request `https://example.org/icon/telegram/[username]` !
 
    > **NOTE**
    >
@@ -33,7 +33,7 @@
 
 4. QQ
 
-   Request `https://example.org/qq/[qq num id]` !
+   Request `https://example.org/icon/qq/[qq num id]` !
 
    > **Warning**
    >
