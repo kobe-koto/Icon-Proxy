@@ -17,6 +17,8 @@
    >
    > Please **DO NOT** hash your email, we'll do it for you.
    >
+   > If you still want to hash your email, please use `https://example.org/icon/hashed-gavatar/[hashed-email]`
+   >
    > The Size query string is supported (1~2048 pixels), example below:
    >
    > `https://example.org/icon/gavatar/[email]?s=512`
