@@ -7,6 +7,8 @@
 
 1. GitHub
 
+   Requires a `GITHUB_TOKEN` environment variable.
+
    Request `https://example.org/icon/github/[username]` !
 
 2. Gavatar
