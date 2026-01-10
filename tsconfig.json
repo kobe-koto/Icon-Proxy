@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "nodenext",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "allowJs": true,
+        "moduleResolution": "nodenext"
+    },
+    "include": [
+        "worker-configuration.d.ts",
+        "functions/**/*.ts"
+    ]
+}

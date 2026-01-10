@@ -1,4 +1,4 @@
-export async function onRequest(context) {
+export const onRequest: PagesFunction<Env> = async (context) => {
     const { username } = context.params;
     const requestHeaders = new Headers({
         "User-Agent": "curl/8.4.0",
@@ -10,7 +10,8 @@ export async function onRequest(context) {
         headers: requestHeaders
     });
     if (Data.status === 304 || Data.status === 200) {
-        return await fetch((await Data.json()).avatar_url);
+        const data = await Data.json() as { avatar_url: string };
+        return await fetch(data.avatar_url);
     } else if (Data.status === 404) {
         return new Response("404 Not Found, This ID is not exist.", {
             status: 404
@@ -21,5 +22,4 @@ export async function onRequest(context) {
             status: 500
         })
     }
-
 }
