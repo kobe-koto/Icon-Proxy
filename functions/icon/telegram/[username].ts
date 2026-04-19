@@ -1,3 +1,5 @@
+import UnifiedImageResponseFactory from "@internal/UnifiedImageResponseFactory.js";
+
 export const onRequest: PagesFunction = async (context) => {
     const { username } = context.params;
     if ((username as string).startsWith("@")) {
@@ -11,7 +13,7 @@ export const onRequest: PagesFunction = async (context) => {
     if (TargetElement !== null) {
         const match = TargetElement[0].match(/src="([^]*)"/);
         if (match) {
-            return await fetch(match[1])
+            return await UnifiedImageResponseFactory.Create(match[1])
         }
     }
 
