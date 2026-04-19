@@ -8,7 +8,13 @@
         "forceConsistentCasingInFileNames": true,
         "noEmit": true,
         "allowJs": true,
-        "moduleResolution": "nodenext"
+        "moduleResolution": "nodenext",
+        "baseUrl": "./",
+        "paths": {
+            "@internal/*": [
+                "functions/internal/*"
+            ]
+        }
     },
     "include": [
         "worker-configuration.d.ts",
