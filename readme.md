@@ -3,6 +3,10 @@
 
 <p style="text-align: center">Icon-Proxy provides a simple way to fetch a specified user’s icon from various platforms through Cloudflare Pages Functions.</p>
 
+# ~~Credits~~
+
+~~huge thank you astro remote images optimization for not following redirects so i have to develop this shi~~
+
 # Usage 
 
 1. GitHub
